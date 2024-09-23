@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.CDs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.CDs img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-avanzado {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 80vw;
+    height: 60vh;
+}
+
+.cuadrado {
+    background-color: red;
+}
+
+.grid-anidado {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    grid-column: 1 / 3; 
+}
+
+.anidado-cuadrado {
+    background-color: blue;
+}
+
+.cuadrado:nth-of-type(4) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
